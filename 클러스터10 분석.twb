@@ -1,0 +1,906 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0818.1952                               -->
+<workbook original-version='18.1' source-build='2020.4.8 (20204.21.0818.1952)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cluster_level_grid' inline='true' name='federated.1nluzep1quovmi196w5vv0p0kswt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cluster_level_grid' name='textscan.18o6k4d1xhaewh12u2nlr1j3p4tz'>
+            <connection class='textscan' directory='C:/programming/COMPAS_SUWON/code/modeling' filename='cluster_level_grid.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.18o6k4d1xhaewh12u2nlr1j3p4tz' name='cluster_level_grid.csv' table='[cluster_level_grid#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='클러스터' ordinal='0' />
+            <column datatype='real' name='cnt_light' ordinal='1' />
+            <column datatype='real' name='total_cnt_securitylight' ordinal='2' />
+            <column datatype='real' name='old_area_ratio' ordinal='3' />
+            <column datatype='real' name='sangga_area_ratio' ordinal='4' />
+            <column datatype='real' name='cnt_cctv' ordinal='5' />
+            <column datatype='real' name='cnt_112' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.18o6k4d1xhaewh12u2nlr1j3p4tz' name='cluster_level_grid.csv' table='[cluster_level_grid#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='클러스터' ordinal='0' />
+            <column datatype='real' name='cnt_light' ordinal='1' />
+            <column datatype='real' name='total_cnt_securitylight' ordinal='2' />
+            <column datatype='real' name='old_area_ratio' ordinal='3' />
+            <column datatype='real' name='sangga_area_ratio' ordinal='4' />
+            <column datatype='real' name='cnt_cctv' ordinal='5' />
+            <column datatype='real' name='cnt_112' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cluster_level_grid.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>클러스터</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[클러스터]</local-name>
+            <parent-name>[cluster_level_grid.csv]</parent-name>
+            <remote-alias>클러스터</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_level_grid.csv_F1339F35FEAD4D5A995C1702B4328A3B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cnt_light</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cnt_light]</local-name>
+            <parent-name>[cluster_level_grid.csv]</parent-name>
+            <remote-alias>cnt_light</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_level_grid.csv_F1339F35FEAD4D5A995C1702B4328A3B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cnt_securitylight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_cnt_securitylight]</local-name>
+            <parent-name>[cluster_level_grid.csv]</parent-name>
+            <remote-alias>total_cnt_securitylight</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_level_grid.csv_F1339F35FEAD4D5A995C1702B4328A3B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>old_area_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[old_area_ratio]</local-name>
+            <parent-name>[cluster_level_grid.csv]</parent-name>
+            <remote-alias>old_area_ratio</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_level_grid.csv_F1339F35FEAD4D5A995C1702B4328A3B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sangga_area_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sangga_area_ratio]</local-name>
+            <parent-name>[cluster_level_grid.csv]</parent-name>
+            <remote-alias>sangga_area_ratio</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_level_grid.csv_F1339F35FEAD4D5A995C1702B4328A3B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cnt_cctv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cnt_cctv]</local-name>
+            <parent-name>[cluster_level_grid.csv]</parent-name>
+            <remote-alias>cnt_cctv</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_level_grid.csv_F1339F35FEAD4D5A995C1702B4328A3B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cnt_112</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cnt_112]</local-name>
+            <parent-name>[cluster_level_grid.csv]</parent-name>
+            <remote-alias>cnt_112</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_level_grid.csv_F1339F35FEAD4D5A995C1702B4328A3B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='cluster_level_grid.csv' datatype='table' name='[__tableau_internal_object_id__].[cluster_level_grid.csv_F1339F35FEAD4D5A995C1702B4328A3B]' role='measure' type='quantitative' />
+      <column caption='Cnt 112' datatype='real' name='[cnt_112]' role='measure' type='quantitative' />
+      <column caption='Cnt Cctv' datatype='real' name='[cnt_cctv]' role='measure' type='quantitative' />
+      <column caption='Cnt Light' datatype='real' name='[cnt_light]' role='measure' type='quantitative' />
+      <column caption='Old Area Ratio' datatype='real' name='[old_area_ratio]' role='measure' type='quantitative' />
+      <column caption='Sangga Area Ratio' datatype='real' name='[sangga_area_ratio]' role='measure' type='quantitative' />
+      <column caption='Total Cnt Securitylight' datatype='real' name='[total_cnt_securitylight]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[클러스터]' role='dimension' type='ordinal' />
+      <column-instance column='[cnt_cctv]' derivation='None' name='[none:cnt_cctv:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[old_area_ratio]' derivation='None' name='[none:old_area_ratio:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sangga_area_ratio]' derivation='None' name='[none:sangga_area_ratio:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[클러스터]' derivation='None' name='[none:클러스터:ok]' pivot='key' type='ordinal' />
+      <group hidden='true' name='[제외(Cnt Cctv,클러스터)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:cnt_cctv:qk]' />
+          <groupfilter function='level-members' level='[none:클러스터:ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[제외(Old Area Ratio,클러스터)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:old_area_ratio:qk]' />
+          <groupfilter function='level-members' level='[none:클러스터:ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[제외(Sangga Area Ratio,클러스터)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:sangga_area_ratio:qk]' />
+          <groupfilter function='level-members' level='[none:클러스터:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:클러스터:ok]' type='palette'>
+            <map to='#27d874'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#2b1fdb'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#49d839'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#6edddb'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#80a9d7'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#a356d0'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#c4ed79'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#d64c73'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#eed15b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#ef7549'>
+              <bucket>9</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cluster_level_grid.csv' id='cluster_level_grid.csv_F1339F35FEAD4D5A995C1702B4328A3B'>
+            <properties context=''>
+              <relation connection='textscan.18o6k4d1xhaewh12u2nlr1j3p4tz' name='cluster_level_grid.csv' table='[cluster_level_grid#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='클러스터' ordinal='0' />
+                  <column datatype='real' name='cnt_light' ordinal='1' />
+                  <column datatype='real' name='total_cnt_securitylight' ordinal='2' />
+                  <column datatype='real' name='old_area_ratio' ordinal='3' />
+                  <column datatype='real' name='sangga_area_ratio' ordinal='4' />
+                  <column datatype='real' name='cnt_cctv' ordinal='5' />
+                  <column datatype='real' name='cnt_112' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='cluster_result_grid' inline='true' name='federated.1afwrfj0ndr87v1ewkdjf0a1hhy9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cluster_result_grid' name='textscan.1do8w1h1w2zr7t1a93z4u0sgq73s'>
+            <connection class='textscan' directory='C:/programming/COMPAS_SUWON/code/modeling' filename='cluster_result_grid.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1do8w1h1w2zr7t1a93z4u0sgq73s' name='cluster_result_grid.csv' table='[cluster_result_grid#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='gid' ordinal='0' />
+            <column datatype='integer' name='cnt_light' ordinal='1' />
+            <column datatype='integer' name='total_cnt_securitylight' ordinal='2' />
+            <column datatype='real' name='old_area_ratio' ordinal='3' />
+            <column datatype='real' name='sangga_area_ratio' ordinal='4' />
+            <column datatype='integer' name='cnt_cctv' ordinal='5' />
+            <column datatype='real' name='cnt_112' ordinal='6' />
+            <column datatype='integer' name='클러스터' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1do8w1h1w2zr7t1a93z4u0sgq73s' name='cluster_result_grid.csv' table='[cluster_result_grid#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='gid' ordinal='0' />
+            <column datatype='integer' name='cnt_light' ordinal='1' />
+            <column datatype='integer' name='total_cnt_securitylight' ordinal='2' />
+            <column datatype='real' name='old_area_ratio' ordinal='3' />
+            <column datatype='real' name='sangga_area_ratio' ordinal='4' />
+            <column datatype='integer' name='cnt_cctv' ordinal='5' />
+            <column datatype='real' name='cnt_112' ordinal='6' />
+            <column datatype='integer' name='클러스터' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cluster_result_grid.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gid]</local-name>
+            <parent-name>[cluster_result_grid.csv]</parent-name>
+            <remote-alias>gid</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_result_grid.csv_C5AEA30DC9FF420E94830E7393FADCC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cnt_light</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cnt_light]</local-name>
+            <parent-name>[cluster_result_grid.csv]</parent-name>
+            <remote-alias>cnt_light</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_result_grid.csv_C5AEA30DC9FF420E94830E7393FADCC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cnt_securitylight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_cnt_securitylight]</local-name>
+            <parent-name>[cluster_result_grid.csv]</parent-name>
+            <remote-alias>total_cnt_securitylight</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_result_grid.csv_C5AEA30DC9FF420E94830E7393FADCC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>old_area_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[old_area_ratio]</local-name>
+            <parent-name>[cluster_result_grid.csv]</parent-name>
+            <remote-alias>old_area_ratio</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_result_grid.csv_C5AEA30DC9FF420E94830E7393FADCC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sangga_area_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sangga_area_ratio]</local-name>
+            <parent-name>[cluster_result_grid.csv]</parent-name>
+            <remote-alias>sangga_area_ratio</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_result_grid.csv_C5AEA30DC9FF420E94830E7393FADCC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cnt_cctv</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cnt_cctv]</local-name>
+            <parent-name>[cluster_result_grid.csv]</parent-name>
+            <remote-alias>cnt_cctv</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_result_grid.csv_C5AEA30DC9FF420E94830E7393FADCC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cnt_112</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cnt_112]</local-name>
+            <parent-name>[cluster_result_grid.csv]</parent-name>
+            <remote-alias>cnt_112</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_result_grid.csv_C5AEA30DC9FF420E94830E7393FADCC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>클러스터</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[클러스터]</local-name>
+            <parent-name>[cluster_result_grid.csv]</parent-name>
+            <remote-alias>클러스터</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cluster_result_grid.csv_C5AEA30DC9FF420E94830E7393FADCC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='cluster_result_grid.csv' datatype='table' name='[__tableau_internal_object_id__].[cluster_result_grid.csv_C5AEA30DC9FF420E94830E7393FADCC2]' role='measure' type='quantitative' />
+      <column caption='Cnt 112' datatype='real' name='[cnt_112]' role='measure' type='quantitative' />
+      <column caption='Cnt Cctv' datatype='integer' name='[cnt_cctv]' role='measure' type='quantitative' />
+      <column caption='Cnt Light' datatype='integer' name='[cnt_light]' role='measure' type='quantitative' />
+      <column caption='Gid' datatype='string' name='[gid]' role='dimension' type='nominal' />
+      <column caption='Old Area Ratio' datatype='real' name='[old_area_ratio]' role='measure' type='quantitative' />
+      <column caption='Sangga Area Ratio' datatype='real' name='[sangga_area_ratio]' role='measure' type='quantitative' />
+      <column caption='Total Cnt Securitylight' datatype='integer' name='[total_cnt_securitylight]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[클러스터]' role='dimension' type='ordinal' />
+      <column-instance column='[클러스터]' derivation='None' name='[none:클러스터:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:클러스터:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>7</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cluster_result_grid.csv' id='cluster_result_grid.csv_C5AEA30DC9FF420E94830E7393FADCC2'>
+            <properties context=''>
+              <relation connection='textscan.1do8w1h1w2zr7t1a93z4u0sgq73s' name='cluster_result_grid.csv' table='[cluster_result_grid#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='gid' ordinal='0' />
+                  <column datatype='integer' name='cnt_light' ordinal='1' />
+                  <column datatype='integer' name='total_cnt_securitylight' ordinal='2' />
+                  <column datatype='real' name='old_area_ratio' ordinal='3' />
+                  <column datatype='real' name='sangga_area_ratio' ordinal='4' />
+                  <column datatype='integer' name='cnt_cctv' ordinal='5' />
+                  <column datatype='real' name='cnt_112' ordinal='6' />
+                  <column datatype='integer' name='클러스터' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='클러스터 분석'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cluster_level_grid' name='federated.1nluzep1quovmi196w5vv0p0kswt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nluzep1quovmi196w5vv0p0kswt'>
+            <column caption='Cnt 112' datatype='real' name='[cnt_112]' role='measure' type='quantitative' />
+            <column caption='Cnt Cctv' datatype='real' name='[cnt_cctv]' role='measure' type='quantitative' />
+            <column caption='Cnt Light' datatype='real' name='[cnt_light]' role='measure' type='quantitative' />
+            <column-instance column='[cnt_112]' derivation='None' name='[none:cnt_112:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cnt_cctv]' derivation='None' name='[none:cnt_cctv:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cnt_light]' derivation='None' name='[none:cnt_light:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[old_area_ratio]' derivation='None' name='[none:old_area_ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sangga_area_ratio]' derivation='None' name='[none:sangga_area_ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_cnt_securitylight]' derivation='None' name='[none:total_cnt_securitylight:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[클러스터]' derivation='None' name='[none:클러스터:ok]' pivot='key' type='ordinal' />
+            <column caption='Old Area Ratio' datatype='real' name='[old_area_ratio]' role='measure' type='quantitative' />
+            <column caption='Sangga Area Ratio' datatype='real' name='[sangga_area_ratio]' role='measure' type='quantitative' />
+            <column caption='Total Cnt Securitylight' datatype='real' name='[total_cnt_securitylight]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[클러스터]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]'>
+            <groupfilter from='0' function='range' level='[none:클러스터:ok]' to='9' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:cnt_112:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:cnt_cctv:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:cnt_light:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:old_area_ratio:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:sangga_area_ratio:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]' />
+            </encodings>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:total_cnt_securitylight:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1nluzep1quovmi196w5vv0p0kswt].[none:cnt_112:qk] + ([federated.1nluzep1quovmi196w5vv0p0kswt].[none:cnt_cctv:qk] + ([federated.1nluzep1quovmi196w5vv0p0kswt].[none:cnt_light:qk] + ([federated.1nluzep1quovmi196w5vv0p0kswt].[none:old_area_ratio:qk] + ([federated.1nluzep1quovmi196w5vv0p0kswt].[none:sangga_area_ratio:qk] + [federated.1nluzep1quovmi196w5vv0p0kswt].[none:total_cnt_securitylight:qk])))))</rows>
+        <cols>[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]</cols>
+      </table>
+      <simple-id uuid='{CD9A18E9-4B6A-4455-99F0-15B4E20CEB28}' />
+    </worksheet>
+    <worksheet name='클러스터별 그리드 갯수'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cluster_result_grid' name='federated.1afwrfj0ndr87v1ewkdjf0a1hhy9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1afwrfj0ndr87v1ewkdjf0a1hhy9'>
+            <column-instance column='[gid]' derivation='CountD' name='[ctd:gid:qk]' pivot='key' type='quantitative' />
+            <column caption='Gid' datatype='string' name='[gid]' role='dimension' type='nominal' />
+            <column-instance column='[클러스터]' derivation='None' name='[none:클러스터:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[클러스터]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1afwrfj0ndr87v1ewkdjf0a1hhy9].[none:클러스터:ok]</rows>
+        <cols>[federated.1afwrfj0ndr87v1ewkdjf0a1hhy9].[ctd:gid:qk]</cols>
+      </table>
+      <simple-id uuid='{E2286528-6921-40DC-8B08-A2D72DB048B8}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='클러스터 분석'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]' type='highlighter' />
+            <card pane-specification-id='1' param='[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:ok]</field>
+            <field>[federated.1nluzep1quovmi196w5vv0p0kswt].[none:클러스터:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{973ED0A1-0E73-41CF-8075-8E3D93E81A53}' />
+    </window>
+    <window class='worksheet' maximized='true' name='클러스터별 그리드 갯수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1afwrfj0ndr87v1ewkdjf0a1hhy9].[none:gid:nk]</field>
+            <field>[federated.1afwrfj0ndr87v1ewkdjf0a1hhy9].[none:클러스터:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1E0D8845-AB08-4DDF-9B30-A836D5CC30E6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='클러스터 분석' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='클러스터별 그리드 갯수' width='192'>
+      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
+      2v8D4cPzyb8uSgkAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
